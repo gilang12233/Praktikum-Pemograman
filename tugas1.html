@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodcourt Nusantara</title>
+
+    <style>
+        /* PENGATURAN DASAR */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #e85d04;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            margin-bottom: 20px;
+        }
+
+        header img {
+            width: 100%;
+            max-width: 750px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* KONTEN */
+        main {
+            padding: 25px 5%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #e85d04;
+            margin-bottom: 20px;
+        }
+
+        /* TABEL MENU */
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            min-width: 500px;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e85d04;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #fff0e5;
+        }
+
+        tbody tr:hover {
+            background-color: #ffe0c2;
+        }
+
+        td img {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* TOMBOL ALAMAT */
+        .link-foodcourt {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .link-foodcourt a {
+            display: inline-block;
+            background-color: #e85d04;
+            color: white;
+            padding: 13px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .link-foodcourt a:hover {
+            background-color: #bc3908;
+        }
+
+        .alamat {
+            text-align: center;
+            line-height: 1.7;
+            margin-top: 15px;
+            color: #555;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 18px 10px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 8px 0;
+        }
+
+        /* TAMPILAN HP */
+        @media (max-width: 600px) {
+            header img {
+                height: 170px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            main {
+                padding: 20px 12px;
+            }
+
+            td img {
+                width: 85px;
+                height: 65px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER WEBSITE -->
+    <header>
+        <h1>FOODCOURT NUSANTARA</h1>
+
+        <p>
+            Tempat Makan Enak, Harga Bersahabat!
+        </p>
+
+        <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80"
+            alt="Suasana Foodcourt Nusantara">
+    </header>
+
+    <!-- KONTEN UTAMA -->
+    <main>
+
+        <h2>Daftar Menu Makanan</h2>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Gambar Makanan</th>
+                        <th>Nama Makanan</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <img
+                                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=300&q=80"
+                                alt="Pizza">
+                        </td>
+                        <td>Pizza</td>
+                        <td>Rp35.000</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <img
+                                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=300&q=80"
+                                alt="Beef Burger">
+                        </td>
+                        <td>Beef Burger</td>
+                        <td>Rp25.000</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <img
+                                src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=300&q=80"
+                                alt="Nasi Goreng">
+                        </td>
+                        <td>Nasi Goreng</td>
+                        <td>Rp18.000</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <img
+                                src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=300&q=80"
+                                alt="Mi Ayam">
+                        </td>
+                        <td>Mi Ayam</td>
+                        <td>Rp15.000</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <img
+                                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=300&q=80"
+                                alt="Salad Sayur">
+                        </td>
+                        <td>Salad Sayur</td>
+                        <td>Rp20.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ALAMAT FOODCOURT -->
+        <h2>Lokasi Foodcourt</h2>
+
+        <p class="alamat">
+            Jetis RT 05 RW 05, Kadipiro,<br>
+            Banjarsari, Surakarta
+        </p>
+
+        <div class="link-foodcourt">
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Jetis+RT+05+RW+05+Kadipiro+Banjarsari+Surakarta"
+                target="_blank"
+                rel="noopener noreferrer">
+                Kunjungi Foodcourt
+            </a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER COPYRIGHT -->
+    <footer>
+        <p>
+            &copy; 2026 Foodcourt Nusantara.
+            Hak Cipta Dilindungi.
+        </p>
+
+        <p>
+            Dibuat oleh: Muhammad Gilang Nur Alif Irfa'i
+        </p>
+    </footer>
+
+</body>
+</html>
